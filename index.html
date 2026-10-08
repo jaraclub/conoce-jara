@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="Una etapa que pasa muy rápido. Jara Club">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Asociación Jara Club","url":"https://jaraclub.es","description":"Asociación juvenil con actividades de tiempo libre para chicos."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Asociación Jara Club","url":"https://jaraclub.es","description":"Asociación juvenil con actividades de tiempo libre para chicos.","telephone":"+34915615441","email":"jaraclub@jaraclub.com","address":{"@type":"PostalAddress","streetAddress":"C/ Menéndez Pidal, 35","postalCode":"28036","addressLocality":"Madrid","addressCountry":"ES"}}</script>
 <style>
 :root{
   --red:#bf2025; --orange:#f2931d;
@@ -76,6 +76,37 @@ details p{color:var(--muted);margin-top:10px}
 .cta h2{color:#fff}
 .cta p{color:rgba(255,255,255,.92);font-size:19px;max-width:30em;margin:0 auto}
 footer{text-align:center;color:var(--muted);font-size:14px;padding:26px 0}
+.pre{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 22px;margin-top:24px}
+.pre .ico{background:var(--soft);margin-bottom:14px}
+.pre p{color:var(--muted)}
+.steps{list-style:none;margin:22px 0 0;padding:0}
+.steps li{position:relative;padding:0 0 22px 54px}
+.steps li:last-child{padding-bottom:0}
+.steps li:before{content:attr(data-n);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:800}
+.steps li:after{content:"";position:absolute;left:17px;top:42px;bottom:6px;width:2px;background:var(--orange);opacity:.45}
+.steps li:last-child:after{display:none}
+.steps b{display:block;font-size:17px;margin-bottom:2px}
+.steps span{color:var(--muted);font-size:16px}
+.traits-title{margin:38px 0 4px}
+.traits{list-style:none;margin:0;padding:0}
+.traits li{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.traits li:last-child{border-bottom:0}
+.traits i{font-style:normal;font-size:28px;line-height:1.2}
+.traits b{display:block;font-size:17px}
+.traits span{color:var(--muted);font-size:16px}
+.fam{background:var(--soft2);border-radius:22px;padding:28px 22px;margin-top:30px;text-align:center}
+.fam h3{margin-bottom:8px}
+.fam p{color:var(--muted)}
+.who{font-size:14.5px;color:var(--muted);text-align:center;margin-top:26px}
+.contact{padding-bottom:50px}
+.clist{display:grid;gap:12px;margin-top:6px}
+.crow{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;color:inherit;text-decoration:none}
+.crow .ico{width:48px;height:48px;font-size:24px;border-radius:14px}
+.crow:nth-child(2) .ico{background:var(--soft2)}
+.crow small{display:block;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.crow b{display:block;font-size:17.5px;line-height:1.35;word-break:break-word}
+.crow:active{background:var(--soft)}
+@media (min-width:680px){.clist{grid-template-columns:repeat(3,1fr)}.crow{flex-direction:column;align-items:flex-start;text-align:left}}
 @media (min-width:680px){body{font-size:18px}.grid{grid-template-columns:1fr 1fr}.card:last-child{grid-column:1/-1}.acts{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
@@ -115,13 +146,34 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:26px 0}
 </div></section>
 
 <section class="band"><div class="wrap">
-  <span class="kicker">Nos preguntan</span>
-  <h2>Lo que conviene saber</h2>
-  <details><summary>Qué es el Jara</summary><p>Una asociación juvenil con actividades de tiempo libre los viernes: deporte, cultura, excursiones, juegos y proyectos, en un ambiente sano y con adultos pendientes de los chicos.</p></details>
-  <details><summary>Un apoyo, no un sustituto</summary><p>El Jara es un apoyo para que los hijos crezcan en su tiempo libre, en coherencia con lo que cada familia quiere para ellos.</p></details>
-  <details><summary>Descubrir la fe, con alegría y libertad</summary><p>Un ambiente para conocer a Jesús y vivir la fe con naturalidad, respetando lo que cada familia quiere transmitir.</p></details>
-  <details><summary>Crecer en amistad</summary><p>Con chicos de otros cursos y de otros colegios, no solo con sus compañeros de clase.</p></details>
-  <details><summary>El preceptor, una persona de referencia</summary><p>Los chicos no están solo en actividades: tienen a alguien que los conoce, los escucha y está en contacto con la familia.</p></details>
+  <span class="kicker">El Jara por dentro</span>
+  <h2>Así cuidamos a cada chico</h2>
+  <p class="sub">Un club pensado como un apoyo para las familias, que son quienes educan.</p>
+
+  <div class="pre">
+    <div class="ico">🧭</div>
+    <h3>Un preceptor para cada chico</h3>
+    <p>Cada socio cuenta con un preceptor: una persona de referencia que lo conoce, lo escucha y colabora con sus padres en su formación. Está para lo que el chico y su familia necesiten.</p>
+    <ol class="steps">
+      <li data-n="1"><b>Conversaciones frecuentes con el chico</b><span>De lo que él quiera: familia, amigos, estudio, tiempo libre. El protagonista es él.</span></li>
+      <li data-n="2"><b>Entrevistas trimestrales con los padres</b><span>Para intercambiar impresiones y acordar juntos cómo seguir las próximas semanas.</span></li>
+      <li data-n="3"><b>Comunicación fluida durante todo el curso</b><span>Un trato cercano para resolver dudas y estar al tanto de cómo va cada chico.</span></li>
+    </ol>
+  </div>
+
+  <h3 class="traits-title">Un ambiente con tres rasgos</h3>
+  <ul class="traits">
+    <li><i>💛</i><div><b>Amistad</b><span>Con chicos de otros cursos y de otros colegios, y no solo con los de clase.</span></div></li>
+    <li><i>🙌</i><div><b>Liderazgo para servir</b><span>Asumen responsabilidades y aprenden a ponerse al servicio de los demás.</span></div></li>
+    <li><i>🗝️</i><div><b>Formación en y para la libertad</b><span>Cada chico decide, según su edad, a qué metas dirige sus mejores esfuerzos.</span></div></li>
+  </ul>
+
+  <div class="fam">
+    <h3>Las familias, protagonistas</h3>
+    <p>La responsabilidad última de la educación es de los padres. Por eso forman parte de la dirección del club y participan en sus actividades.</p>
+  </div>
+
+  <p class="who">El Jara es una asociación civil y laical. La orientación cristiana corresponde al Opus Dei, y el acompañamiento y la formación espiritual son siempre voluntarios.</p>
 </div></section>
 
 <section class="cta"><div class="wrap">
@@ -132,6 +184,17 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:26px 0}
 
 <figure class="break"><img src="media/campamento.jpg" width="1000" height="1416" alt="Grupo de chicos del Jara Club posando juntos en las escaleras durante el campamento" loading="lazy"></figure>
 
-<footer>© <a href="https://jaraclub.es" style="color:inherit">Asociación Jara Club</a></footer>
+<section class="contact"><div class="wrap">
+  <span class="kicker">Contacto</span>
+  <h2>¿Quieres conocer el Jara?</h2>
+  <p class="sub">Escríbenos o llámanos y te contamos lo que necesites.</p>
+  <div class="clist">
+    <a class="crow" href="https://maps.app.goo.gl/c9oo7kKi59d5S3gp8" target="_blank" rel="noopener"><div class="ico">📍</div><div><small>Dónde estamos</small><b>C/ Menéndez Pidal, 35<br>28036 Madrid</b></div></a>
+    <a class="crow" href="tel:+34915615441"><div class="ico">📞</div><div><small>Teléfono</small><b>91 561 54 41</b></div></a>
+    <a class="crow" href="mailto:jaraclub@jaraclub.com"><div class="ico">✉️</div><div><small>Email</small><b>jaraclub@jaraclub.com</b></div></a>
+  </div>
+</div></section>
+
+<footer>© <a href="https://jaraclub.com" style="color:inherit">Asociación Jara Club</a></footer>
 </body>
 </html>
